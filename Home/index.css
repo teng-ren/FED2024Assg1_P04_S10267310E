@@ -63,22 +63,31 @@ main {
 .main-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center; /* Centers content in both halves */
     align-items: center;
     flex: 1;
     width: 100%;
     max-width: 1200px;
+    gap: 40px; /* Space between sections */
 }
 
 .main-placeholder {
     width: 90%;
-    flex: 1;
+    height: 60vh; /* Takes up more space */
     background-color: lightgray;
-    margin-bottom: 20px;
+    margin-bottom: 0; /* Remove margin to balance layout */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden; /* Prevent image overflow */
+}
+
+.main-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Force the image to fill the space, maintaining aspect ratio */
+    object-position: center; /* Centers the image */
 }
 
 .button-container {
@@ -86,12 +95,14 @@ main {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    align-items: center;
+    width: 100%; /* Ensures buttons span their section */
 }
 
 .btn {
     flex: 1;
-    max-width: 300px;
-    min-width: 120px;
+    max-width: 200px; /* Keeps buttons uniform in size */
+    min-width: 150px;
     text-decoration: none;
     text-align: center;
     color: black;
@@ -130,5 +141,5 @@ footer {
 }
 
 .footer-content a:hover {
-    text-decoration: underline;
+    text-decoration: underline;
 }

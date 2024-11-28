@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    background-color: lightgray;
+    padding: 10px 0;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: blue;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.booking-details {
+    width: 100%;
+    max-width: 1200px;
+    background-color: lightgray;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.booking-details h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input[type="text"], input[type="date"] {
+    flex: 1 1 calc(33.33% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.top-locations {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.top-locations h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.location-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+}
+
+.location-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: lightgray;
+    color: black;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .location-cards {
+        display: flex;
+        flex-direction: column; /* Stack cards vertically */
+        gap: 20px; /* Add spacing between cards */
+    }
+
+    .card {
+        width: 100%; /* Ensure the card takes full width */
+        margin-bottom: 20px; /* Add spacing at the bottom */
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: column; /* Stack inputs vertically */
+        gap: 10px; /* Add spacing between inputs for readability */
+    }
+
+    input[type="text"],
+    input[type="date"] {
+        width: 100%; /* Ensure inputs take full width */
+        box-sizing: border-box; /* Include padding and border in width */
+    }
+}
+/* Existing styles remain the same */
+
+.submit-btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: darkblue;
+}
+
+/* Style for the images in top locations */
+.location-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 200px; /* Adjust based on the height you want */
+    border-radius: 4px; /* Optional: Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a soft shadow effect */
+  }
+  
+  .location-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between cards */
+  }
+  
+  .card {
+    text-align: center;
+    width: 30%; /* Adjust width to fit the layout nicely */
+  }
