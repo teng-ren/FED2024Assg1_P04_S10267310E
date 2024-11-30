@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wanderly</title>
-  <link rel="stylesheet" href="TravelIti.css">
+  <link rel="stylesheet" href="normalise.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrapper">
     <header>
       <div class="container header-content">
         <h1>Wanderly</h1>
-        <nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="dropdown-menu">
           <a href="index.html">Home</a>
-          <a href="about-me.html">About Me</a>
+          <a href="about-me.html" >About Me</a>
+          <a href="travel-itinerary.html"class="active">Travel Itinerary</a>
+          <a href="travel-tips.html">Travel Tips</a>
+          <a href="booking.html">Booking</a>
+        </nav>
+        <nav class="desktop-nav">
+          <a href="index.html">Home</a>
+          <a href="about-me.html" >About Me</a>
           <a href="travel-itinerary.html"class="active">Travel Itinerary</a>
           <a href="travel-tips.html">Travel Tips</a>
           <a href="booking.html">Booking</a>
@@ -46,12 +55,14 @@
               <strong>Thailand itinerary</strong> highlights the best sights, food, and cultural treasures.
             </p>
           </div>
-
+          <a href="https://www.youtube.com" target="_blank">
           <div class="destination">
+      
             <div class="destination-image">
               <img src="placeholder.jpg" alt="Korea" />
             </div>
             <button class="destination-button">Korea</button>
+          </a>
             <p>
               Dive into the dynamic culture of Korea, where ancient traditions meet cutting-edge trends. With our 
               <strong>Korea itinerary</strong>, you’ll uncover iconic landmarks, delicious cuisine, and hidden gems in Seoul, Busan, and beyond.
@@ -61,6 +72,7 @@
       </div>
     </main>
 
+
     <footer>
       <div class="container footer-content">
         <a href="https://www.instagram.com" target="_blank">Instagram</a>
@@ -69,5 +81,7 @@
       </div>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

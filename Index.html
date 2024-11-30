@@ -4,14 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wanderly</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="normalise.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrapper">
     <header>
       <div class="container header-content">
         <h1>Wanderly</h1>
-        <nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="dropdown-menu">
+          <a href="index.html" class="active">Home</a>
+          <a href="about-me.html">About Me</a>
+          <a href="travel-itinerary.html">Travel Itinerary</a>
+          <a href="travel-tips.html">Travel Tips</a>
+          <a href="booking.html">Booking</a>
+        </nav>
+        <nav class="desktop-nav">
           <a href="index.html" class="active">Home</a>
           <a href="about-me.html">About Me</a>
           <a href="travel-itinerary.html">Travel Itinerary</a>
@@ -24,11 +33,11 @@
     <main>
       <div class="container main-content">
         <div class="main-placeholder">
-            <img src="profile-placeholder.jpg" alt="Japan"/>
+            <img src="profile-placeholder.jpg" alt="Placeholder Image">
         </div>
         <div class="button-container">
-          <a href="index.html" class="btn">Explore Destinations!</a>
-          <a href="travel.html" class="btn">Travel with us!</a>
+          <a href="travel-itinerary.html" class="btn">Explore Destinations!</a>
+          <a href="booking.html" class="btn">Travel with us!</a>
         </div>
       </div>
     </main>
@@ -41,5 +50,7 @@
       </div>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wanderly</title>
-  <link rel="stylesheet" href="Tips.css">
+  <link rel="stylesheet" href="normalise.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrapper">
     <header>
       <div class="container header-content">
         <h1>Wanderly</h1>
-        <nav>
-          <a href="index.html" >Home</a>
-          <a href="about-me.html">About Me</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav class="dropdown-menu">
+          <a href="index.html">Home</a>
+          <a href="about-me.html" >About Me</a>
+          <a href="travel-itinerary.html">Travel Itinerary</a>
+          <a href="travel-tips.html"class="active">Travel Tips</a>
+          <a href="booking.html">Booking</a>
+        </nav>
+        <nav class="desktop-nav">
+          <a href="index.html">Home</a>
+          <a href="about-me.html" >About Me</a>
           <a href="travel-itinerary.html">Travel Itinerary</a>
           <a href="travel-tips.html"class="active">Travel Tips</a>
           <a href="booking.html">Booking</a>
@@ -61,8 +70,9 @@
           <li>Choose accommodations based on location, budget, and reviews.</li>
           <li>Use reusable water bottles and support local businesses.</li>
         </ul>
-      </div>
+      </div>  
     </main>
+
 
     <footer>
       <div class="container footer-content">
@@ -72,5 +82,7 @@
       </div>
     </footer>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
