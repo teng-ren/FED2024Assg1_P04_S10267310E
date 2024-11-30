@@ -21,8 +21,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f4f4f8; /* Light background for readability */
+    background: linear-gradient(to bottom, #d0f4f4, #a8e1e1);
     color: #333;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+
 }
 
 .wrapper {
@@ -109,6 +112,7 @@ nav a:hover {
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Kameron', serif;
 }
 
 .dropdown-menu.active {
@@ -157,10 +161,4 @@ footer {
     color: #bbbbbb;
 }
 
-/* For smaller screens, reduce gap and adjust spacing */
-@media (max-width: 768px) {
-    .footer-content {
-        justify-content: center; /* Center items on smaller screens */
-        gap: 15px; /* Reduce the gap between items */
-    }
-}
+
