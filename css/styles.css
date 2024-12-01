@@ -670,11 +670,6 @@ main {
     font-family: 'Koulen', sans-serif; /* Decorative sans-serif font */
 }
 
-/* Destination Button Hover Effect */
-/* Changes the appearance of the button on hover */
-.destination-button:hover {
-    background-color: lightgrey; /* Changes to a lighter shade on hover */
-}
 
 /* Destination Image */
 /* Styles for images inside destination cards */
