@@ -14,7 +14,9 @@ Features:
 
 [TravelItinerary]: Shows the most popular destinations and shows the itinerary of them
 
-[Booking]: allows readers to book and travel with the author and shows more of the popular destinations
+[Booking]: allows readers to book and travel with the author and shows more of the popular destinations, allows saving of content
+
+[Navbar]Changes to justify dropdown in mobile view with java to save space
 
 What more can be implemented: Could have implemented a page for unique and off the path trails for more adventorous travellers
 
