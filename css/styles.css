@@ -1,4 +1,4 @@
-/* Body and Wrapper */
+/* Font used */
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kameron&display=swap');
@@ -13,7 +13,7 @@
 .jockey{
     font-family: 'Jockey One', sans-serif;
 }
-
+/* Body and Wrapper */
 body {
     font-family: 'Inter', sans-serif; /* Modern font */
     margin: 0;
@@ -379,6 +379,7 @@ main {
     align-items: center;
     text-align: center;
     overflow: hidden;
+    border-radius: 15px;
 }
 
 .main-placeholder img {
